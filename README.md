@@ -1,20 +1,17 @@
-# Audio Visualizer with Playback Line (PyOpenGL + Pygame)
+# 🎵 Note Identifier
 
-A real-time audio waveform visualizer built using **PyOpenGL** and **Pygame**, featuring:
-- Fullscreen playback window  
-- Play button integrated into the screen  
-- Animated waveform display  
-- Moving playback line synced with audio progress  
+A real-time musical note detection system that records audio, analyzes pitch using FFT, and identifies musical notes.
 
 ---
 
 ## 🧩 Features
 
-- Visualizes waveform data from an audio file (`.wav`)
-- Smooth playback animation using OpenGL
-- Horizontal line that moves along the waveform during playback
-- In-screen play/pause button
-- Fullscreen immersive window experience
+- **Real-time audio recording** with keyboard controls ('r' to record, 's' to stop)
+- **Pitch detection** using Fast Fourier Transform (FFT)
+- **Musical note identification** (e.g., A4, C#5) from frequency analysis
+- **Visual feedback** with waveform and frequency spectrum plots
+- **Audio playback** with animated cursor showing playback position
+- **Modular architecture** for easy extensibility
 
 ---
 
@@ -25,31 +22,33 @@ Make sure you have Python 3.9+ installed.
 Install dependencies:
 
 ```bash
-pip install pygame PyOpenGL numpy scipy
-```
-
-If scipy fails to install, try:
-
-```bash
-pip install scipy==1.10.1
+pip install numpy scipy sounddevice matplotlib keyboard
 ```
 
 ---
 
 ## ▶️ Usage
 
-Place your audio file (e.g., `audio.wav`) in the same folder as the script.
-
-Run the script:
+Run the main script:
 
 ```bash
 python main.py
 ```
 
-When the window opens:
+**Controls:**
 
-- Click the **Play** button to start playback.
-- A horizontal white line will move along the waveform as the audio plays.
+1. Press **'r'** to start recording audio
+2. Speak, sing, or play an instrument near your microphone
+3. Press **'s'** to stop recording
+
+**After recording stops:**
+
+- The program will automatically analyze the audio
+- A window will display:
+  - **Waveform plot** (time domain)
+  - **Frequency spectrum** (FFT analysis)
+  - **Detected note** with frequency in Hz
+  - **Play button** to replay the recording with animated cursor
 
 ---
 
@@ -113,7 +112,7 @@ NOTE_IDENTIFIER/
 
 ☕ **Coffee License**
 
-If this code helped you, consider buying me a coffee!;) ☕
+If this code helped you, consider buying me a coffee;) ☕
 
 Feel free to modify, use, and distribute this code for learning and creative purposes.
 
