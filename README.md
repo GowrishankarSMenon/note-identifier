@@ -90,8 +90,3 @@ Pygame
 NumPy
 
 SciPy
-
-yaml
-Copy code
-
----
