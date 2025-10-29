@@ -56,11 +56,24 @@ When the window opens:
 ## 📁 Project Structure
 
 ```
-audio-visualizer/
+NOTE_IDENTIFIER/
 │
-├── main.py              # Main program file
-├── audio.wav            # Your input audio file
-└── README.md            # This file
+├── audio/
+│   ├── playback.py
+│   └── record_audio.py
+│
+├── pitch/
+│   ├── pitch_detection.py
+│   └── pitch_utils.py
+│
+├── source/
+│
+├── ui/
+│   └── screen.py
+│
+├── .gitignore
+├── main.py
+└── README.md
 ```
 
 ---
@@ -100,7 +113,9 @@ audio-visualizer/
 
 ## 📜 License
 
-MIT License © 2025 Kannan
+☕ **Coffee License**
+
+If this code helped you, consider buying me a coffee!;) ☕
 
 Feel free to modify, use, and distribute this code for learning and creative purposes.
 
