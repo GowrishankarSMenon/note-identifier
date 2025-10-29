@@ -66,8 +66,6 @@ NOTE_IDENTIFIER/
 │   ├── pitch_detection.py
 │   └── pitch_utils.py
 │
-├── source/
-│
 ├── ui/
 │   └── screen.py
 │
@@ -105,7 +103,7 @@ NOTE_IDENTIFIER/
 |         ▄▀      ▀▄   ▄▀  ▀▄   ▄▀  ▀▄                    |
 |   Line → ───────────────────────────────►               |
 |                                                         |
-|                   [▶ Play]                              |
+|                   [▶ Play]                             |
  ---------------------------------------------------------
 ```
 
